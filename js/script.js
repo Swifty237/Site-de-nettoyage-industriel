@@ -10,7 +10,7 @@ const title2 = document.getElementById('h52')
 const title3 = document.getElementById('h53')
 const title4 = document.getElementById('h54')
 
-const header = document.querySelector('.bg-info')
+const header = document.getElementById('header')
 const aPropos = document.getElementById('a-propos')
 const tarifs = document.getElementById('tarifs')
 const contact = document.getElementById('contact')

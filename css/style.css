@@ -10,6 +10,8 @@ html, body{
     margin-bottom: 4rem;
     animation: headerUp .5s;
     font-size: auto;
+    background-image: linear-gradient(rgba(33, 71, 33, 0.3),
+    rgba(33, 71, 33, 0.3)), url('../ressources/nettoyage1.jpg');
 }
 
 .header-off {
@@ -18,6 +20,8 @@ html, body{
     animation: headerDown .5s;
     margin-bottom: 4rem;
     font-size: 11px;
+    background-image: linear-gradient(rgba(33, 71, 33, 0.3),
+    rgba(33, 71, 33, 0.3)), url('../ressources/nettoyage1.jpg');
 }
 
 @keyframes headerDown {
@@ -45,51 +49,54 @@ html, body{
 .section-on {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     animation: sectionUp .5s;
     font-size: 13px;
+    box-shadow: 10px 5px 5px rgb(131, 148, 131);
 }
 
 .section-off {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
     animation: sectionDown .5s;
     font-size: 10px;
+    box-shadow: 10px 5px 5px rgb(131, 148, 131);
 }
 
 @keyframes sectionDown {
     from {
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width: 90%;
         font-size: 13px;
     }
     to {
-        height: 80%;
-        width: 80%;
+        height: 70%;
+        width: 70%;
         font-size: 10px; 
     }
 }
 
 @keyframes sectionUp {
     from {
-        height: 80%;
-        width: 80%;
+        height: 70%;
+        width: 70%;
         font-size: 10px;
     }
     to {
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width: 90%;
         font-size: 13px;
     }
 }
 
 
-ul {
+.nav-list {
     width: 50%;
     height: auto;
+    background-color: #0c5725;
 }
 
 .image {
@@ -105,7 +112,7 @@ ul {
     top: 0;
     z-index: 9999;
     width: inherit;
-    opacity: .8;
+    opacity: .7;
 }
 
 .reveal-off {
@@ -141,8 +148,18 @@ ul {
 }
 
 .title {
-    font-size: 100%;
+    font-size: inherit;
 }
 .card-text {
     text-align: justify;
+}
+
+.text-center {
+    color: ivory;
+    font-size: auto;
+}
+
+.nav-footer {
+    width: 50%;
+    height: auto;
 }
