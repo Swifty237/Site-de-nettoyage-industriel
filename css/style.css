@@ -1,0 +1,148 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: auto;
+}
+
+.header-on {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 4rem;
+    animation: headerUp .5s;
+    font-size: auto;
+}
+
+.header-off {
+    height: 80%;
+    width: 80%;
+    animation: headerDown .5s;
+    margin-bottom: 4rem;
+    font-size: 11px;
+}
+
+@keyframes headerDown {
+    from {
+        height: 100%;
+        width: 100%;
+    }
+    to {
+        height: 80%;
+        width: 80%; 
+    }
+}
+
+@keyframes headerUp {
+    from {
+        height: 80%;
+        width: 80%;
+    }
+    to {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.section-on {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 100%;
+    width: 100%;
+    animation: sectionUp .5s;
+    font-size: 13px;
+}
+
+.section-off {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 80%;
+    width: 80%;
+    animation: sectionDown .5s;
+    font-size: 10px;
+}
+
+@keyframes sectionDown {
+    from {
+        height: 100%;
+        width: 100%;
+        font-size: 13px;
+    }
+    to {
+        height: 80%;
+        width: 80%;
+        font-size: 10px; 
+    }
+}
+
+@keyframes sectionUp {
+    from {
+        height: 80%;
+        width: 80%;
+        font-size: 10px;
+    }
+    to {
+        height: 100%;
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+
+ul {
+    width: 50%;
+    height: auto;
+}
+
+.image {
+    height: max-content;
+}
+
+.text {
+    height: fit-content;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: inherit;
+    opacity: .8;
+}
+
+.reveal-off {
+    opacity: 0;
+    margin-top: 4rem;
+    animation: footerRevalOff 1s;
+}
+
+@keyframes footerRevealOff {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.reveal {
+    opacity: 1;
+    margin-top: 4rem;
+    animation: footerReveal 1s;
+}
+
+@keyframes footerReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    font-size: 100%;
+}
+.card-text {
+    text-align: justify;
+}
