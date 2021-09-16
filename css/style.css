@@ -2,6 +2,7 @@ html, body{
     height: 100%;
     width: 100%;
     font-size: auto;
+    background-color: #ffffff;
 }
 
 .header-on {
@@ -10,8 +11,9 @@ html, body{
     margin-bottom: 4rem;
     animation: headerUp .5s;
     font-size: auto;
-    background-image: linear-gradient(rgba(33, 71, 33, 0.3),
-    rgba(33, 71, 33, 0.3)), url('../ressources/nettoyage1.jpg');
+    background-image: linear-gradient(rgba(21, 46, 21, 0.3),
+    rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage1.jpg');
+    background-size: cover;
 }
 
 .header-off {
@@ -20,8 +22,8 @@ html, body{
     animation: headerDown .5s;
     margin-bottom: 4rem;
     font-size: 11px;
-    background-image: linear-gradient(rgba(33, 71, 33, 0.3),
-    rgba(33, 71, 33, 0.3)), url('../ressources/nettoyage1.jpg');
+    background-image: linear-gradient(rgba(21, 46, 21, 0.3),
+    rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage1.jpg');
 }
 
 @keyframes headerDown {
@@ -155,8 +157,7 @@ html, body{
 }
 
 .text-center {
-    color: ivory;
-    font-size: auto;
+    color: rgb(255, 255, 255);
 }
 
 .nav-footer {

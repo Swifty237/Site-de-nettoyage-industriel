@@ -126,12 +126,15 @@ const footerOptions = {
 const handleIntersectFooter = function (entries, footerObserver) {
     entries.forEach(function (entry) {
        if (entry.intersectionRatio >= .3){
+
+            observerSection3.unobserve(contact)
             entry.target.classList.remove('reveal-off')
             entry.target.classList.add('reveal') 
        }
        else {
             entry.target.classList.add('reveal-off')
             entry.target.classList.remove('reveal')
+            observerSection3.observe(contact)
        }
     })
 }
