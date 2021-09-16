@@ -124,7 +124,7 @@ const footerOptions = {
 }
 
 const handleIntersectFooter = function (entries, footerObserver) {
-    entries.forEach(function (entry) {
+    entries.forEach(function(entry) {
        if (entry.intersectionRatio >= .3){
 
             observerSection3.unobserve(contact)
@@ -141,3 +141,14 @@ const handleIntersectFooter = function (entries, footerObserver) {
 
 const footerObserver = new IntersectionObserver(handleIntersectFooter, footerOptions)
 footerObserver.observe(document.getElementById('footer'))
+
+//fonction qui permet de fermer la liste déroulante de la navigation
+
+const navItems = document.querySelectorAll('.nav-item')
+navItems.forEach(navItem => {
+    
+    navItem.addEventListener('click', event => {
+        
+        document.querySelector('.navbar-toggler').click()
+    })
+})
