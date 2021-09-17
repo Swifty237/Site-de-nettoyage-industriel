@@ -9,21 +9,18 @@ html, body{
     height: 100%;
     width: 100%;
     margin-bottom: 2rem;
-    animation: headerUp .5s;
+    animation: headerUp .5s ease-in;
     font-size: auto;
-    background-image: linear-gradient(rgba(21, 46, 21, 0.3),
-    rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage1.jpg');
     background-size: cover;
 }
 
  .header-off {
     height: 80%;
     width: 80%;
-    animation: headerDown .5s;
+    animation: headerDown .5s ease-in;
     margin-bottom: 2rem;
     font-size: 11px;
-    background-image: linear-gradient(rgba(21, 46, 21, 0.3),
-    rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage1.jpg');
+    background-size: cover;
 } 
 
  @keyframes headerDown {
@@ -31,11 +28,11 @@ html, body{
         height: 100%;
         width: 100%;
     }
+    }
     to {
         height: 80%;
         width: 80%; 
-    }
-} 
+    } 
 
 @keyframes headerUp {
      from {
@@ -45,12 +42,7 @@ html, body{
     to {
         height: 100%;
         width: 100%;
-    }
-    /* 33% {background-image: linear-gradient(rgba(21, 46, 21, 0.3), 
-        rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage2.jpg');}
-    
-    66% {background-image: linear-gradient(rgba(21, 46, 21, 0.3), 
-        rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage3.jpg');} */
+    }   
 }
 
 .section-on {
@@ -109,7 +101,7 @@ html, body{
 
 
 .nav-list {
-    width: 70%;
+    width: 80%;
     height: auto;
     background-color: #2d8576;
 }
@@ -128,7 +120,7 @@ html, body{
 
 .reveal-off {
     opacity: 0;
-    margin-top: 4rem;
+    margin-top: 3rem;
     animation: footerRevalOff .5s;
 }
 
@@ -143,7 +135,7 @@ html, body{
 
 .reveal {
     opacity: 1;
-    margin-top: 4rem;
+    margin-top: 3rem;
     animation: footerReveal .5s;
 }
 
@@ -194,4 +186,8 @@ html, body{
 
 .link {
     text-decoration: none;
+}
+
+.button-color {
+    background-color: #2d8576;
 }

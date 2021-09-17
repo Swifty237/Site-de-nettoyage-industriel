@@ -12,22 +12,23 @@
 
     <body class="d-flex flex-column align-items-center">
         <header class="col-12 d-flex flex-column justify-content-around header-off" id="header">
+
             <img class="logo align-self-center mt-4 rounded" src="ressources/logo.png" alt="logo">
-            <h3 class="text-center fs-1">NETT0YAGE INDUSTRIELLE PROFESSIONEL</h3>
+            <h3 class="text-center fs-1">NETT0YAGE INDUSTRIELLE PROFESSIONNEL</h3>
             <span class="text-center fs-5">Bienvenue sur notre site <br>Vous êtes à la recherche de professionnels du nettoyage industrielle ?<br>alors vous êtes au bon endroit</span>
 
             <nav class="d-flex justify-content-center align-items-center navbar navbar-expand-md navbar-dark mb-4" id="nav" aria-current="true">
-                <button class="navbar-toggler btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list bg-success" viewBox="0 0 16 16">
+                <button class="navbar-toggler button-color" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="nav">
                     <ul class="justify-content-around navbar-nav nav-list rounded">
                         <li class="nav-item"><a class="nav-link fw-bold" href="#">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link fw-bold" href="#a-propos">Nos prestations</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#a-propos">Prestations</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="./pages/services-pages.html">Prestation spécialisée</a></li>
                         <li class="nav-item"><a class="nav-link fw-bold" href="#tarifs">Zone d'intervention</a></li>
-                        <li class="nav-item"><a class="nav-link fw-bold" href="./pages/services-pages.html">Service spécifique</a></li>
                         <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
                     </ul>  
                 </div>
@@ -52,11 +53,11 @@
                             <li>Remise en état & Fin de chantier</li>
                             <li>Nettoyage par moussage et brossage</li>
                             <li>Désinfection des surfaces de contact</li>
-                            <li><a class="link" href="./pages/services-pages.html">Nettoyage spécifique</a></li>
+                            <li><span class="me-2">Voir aussi</span><a class="link rounded text-white bg-info fw-bold" href="./pages/services-pages.html"> >> Prestation spécialisée</a></li>
                         </ul>
-                        <span class="text-muted fst-italic">
+                        <em class="text-muted">
                             * Le nettoyage en place (NEP) ou Clean-in-Place (CIP) en anglais est un système automatique de nettoyage des installations sans démontage.
-                        </span>
+                        </em>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@
             <div class="row justify-content-around section-off" id="tarifs">
                 <div class="card text col-12 col-md-5 d-none d-md-block border-0">
                     <div class="card-body">
-                        <h5 class="card-title" id="h52">Notre zone d'intervention</h5>
+                        <h5 class="card-title" id="h52">Zone d'intervention</h5>
                         <div class="rounded my-3 line"></div>
                         <ul>
                             <li>Département-1 | Code département-1</li>
@@ -80,7 +81,7 @@
 
                 <div class="card text col-12 col-md-5 d-md-none border-0">
                     <div class="card-body">
-                        <h5 class="card-title" id="h54">Notre zone d'activité</h5>
+                        <h5 class="card-title" id="h54">zone d'intervention</h5>
                         <div class="rounded my-3 line"></div>
                         <ul>
                             <li>Département-1 | Code département-1</li>
@@ -106,11 +107,12 @@
                     <div class="card-body">
                         <h5 class="card-title" id="h53">Contact</h5>
                         <div class="rounded my-3 line"></div>
+                        <p class="fs-6">Pour un devis, contactez nous:</p>
                         <ul>
-                            <li class="list-unstyled">Nom de la société</li>
-                            <li class="list-unstyled">Adresse de la société</li>
-                            <li class="list-unstyled"><span class="fs-5 fw-bold bg-info text-white rounded">06 95 43 58 60</span></li>
-                            <li class="list-unstyled">Adresse email</li>
+                            <li class="list-unstyled fw-bold">Nom de la société</li>
+                            <li class="list-unstyled fw-bold">Adresse de la société</li>
+                            <li class="list-unstyled fw-bold"><span class="fs-5 bg-info text-white rounded">06 95 43 58 60</span></li>
+                            <li class="list-unstyled fw-bold">Adresse email</li>
                         </ul>
                     </div>
                 </div>
@@ -119,15 +121,14 @@
 
         <footer class="col-12 bg-dark" id="footer">
             <div class="mx-4">
-                <h4 class="text-white text-center my-4">Société de nettoyage industrielle</h4>
+                <h4 class="text-white text-center my-4">Nettoyage industrielle professionnel</h4>
                 <hr class="text-white">
                 <div class="d-flex justify-content-center">
                     <ul class="d-flex list-inline justify-content-around nav-footer">
                         <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#">Accueil</a></li>
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#a-propos">Nos prestations</a></li>
+                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#a-propos">Prestations</a></li>
+                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="pages/services-pages.html">Prestation spécialisée</a></li>
                         <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#tarifs">Zone d'intervention</a></li>
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="pages/services-pages.html">Services</a></li>
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#contact">Contact</a></li>
                     </ul>  
                 </div>
                 <hr class="text-white">

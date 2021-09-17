@@ -152,3 +152,25 @@ navItems.forEach(navItem => {
         document.querySelector('.navbar-toggler').click()
     })
 })
+
+const bgHeader = document.querySelectorAll('[class*="header-"]')
+const changeBackground = (elements) => {
+    elements.forEach((element) => {
+
+        element.style.backgroundImage = 'url("./ressources/nettoyage12.jpg")'
+
+        setTimeout(() => {
+            element.style.backgroundImage = 'url("./ressources/nettoyage22.jpg")'
+
+            setTimeout(() => {
+                element.style.backgroundImage = 'url("./ressources/nettoyage32.jpg")'
+            }, 5000)
+
+        }, 5000) 
+    })
+}
+changeBackground(bgHeader)
+
+setInterval(() => {
+    changeBackground(bgHeader)
+}, 15000);
