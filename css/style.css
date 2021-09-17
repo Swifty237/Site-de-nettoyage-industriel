@@ -3,6 +3,7 @@ html, body{
     width: 100%;
     font-size: auto;
     background-color: #ecf0f1;
+    overflow-x: unset;
 }
 
 .header-on {
@@ -17,8 +18,8 @@ html, body{
  .header-off {
     height: 80%;
     width: 80%;
-    animation: headerDown .5s ease-in;
     margin-bottom: 2rem;
+    animation: headerDown .5s ease-in;
     font-size: 11px;
     background-size: cover;
 } 
