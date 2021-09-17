@@ -11,24 +11,24 @@
     </head>
 
     <body class="d-flex flex-column align-items-center">
-        <header class="col-12 d-flex flex-column justify-content-center header-off" id="header">
-            <h3 class="text-center mb-5">SOCIETE DE NETT0YAGE INDUSTRIELLE</h3>
-            <span class="text-center">Bienvenue sur notre site</span>
-            <span class="text-center mb-5">Le Lorem Ipsum est simplement du faux texte employé.</span>
+        <header class="col-12 d-flex flex-column justify-content-around header-off" id="header">
+            <img class="logo align-self-center mt-4 rounded" src="ressources/logo.png" alt="logo">
+            <h3 class="text-center fs-1">NETT0YAGE INDUSTRIELLE PROFESSIONEL</h3>
+            <span class="text-center fs-5">Bienvenue sur notre site <br>Vous êtes à la recherche de professionnels du nettoyage industrielle ?<br>alors vous êtes au bon endroit</span>
 
-            <nav class="d-flex justify-content-center align-items-center navbar navbar-expand-md navbar-dark" id="nav" aria-current="true">
+            <nav class="d-flex justify-content-center align-items-center navbar navbar-expand-md navbar-dark mb-4" id="nav" aria-current="true">
                 <button class="navbar-toggler btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list bg-success" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="nav">
-                    <ul class="justify-content-around navbar-nav nav-list">
-                        <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#a-propos">A propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tarifs">Nos tarifs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/services-pages.html">Services</a></li>
+                    <ul class="justify-content-around navbar-nav nav-list rounded">
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#a-propos">Nos prestations</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#tarifs">Zone d'intervention</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="./pages/services-pages.html">Service spécifique</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
                     </ul>  
                 </div>
             </nav>
@@ -36,16 +36,27 @@
 
         <main class="col-12 d-flex flex-column align-items-center">
             <div class="row justify-content-around section-off" id="a-propos">
-                <div class="card image col-12 col-md-6 border-0">
-                    <img src="ressources/nettoyage2.jpg" class="card-img-top" alt="">
+                <div class="col-12 col-md-6 border-0">
+                    <img src="ressources/nettoyage2.jpg" class="image" alt="">
                 </div>
 
                 <div class="card text col-12 col-md-5 border-0">
                     <div class="card-body">
-                        <h5 class="card-title" id="h51">A propos</h5>
-                        <p class="card-text">
-                            Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
-                        </p>
+                        <h5 class="card-title" id="h51">Nos prestations</h5>
+                        <div class="rounded my-3 line"></div>
+                        <ul>
+                            <li>Nettoyage de bureaux, commerces, cabinets médicaux, immeubles, écoles...</li>
+                            <li>Nettoyage industriel & agro-alimentaire </li>
+                            <li>Nettoyage en place (NEP)*</li>
+                            <li>Vitrerie, Sols</li>
+                            <li>Remise en état & Fin de chantier</li>
+                            <li>Nettoyage par moussage et brossage</li>
+                            <li>Désinfection des surfaces de contact</li>
+                            <li><a class="link" href="./pages/services-pages.html">Nettoyage spécifique</a></li>
+                        </ul>
+                        <span class="text-muted fst-italic">
+                            * Le nettoyage en place (NEP) ou Clean-in-Place (CIP) en anglais est un système automatique de nettoyage des installations sans démontage.
+                        </span>
                     </div>
                 </div>
             </div>
@@ -53,38 +64,54 @@
             <div class="row justify-content-around section-off" id="tarifs">
                 <div class="card text col-12 col-md-5 d-none d-md-block border-0">
                     <div class="card-body">
-                        <h5 class="card-title" id="h52">Nos tarifs</h5>
-                        <p class="card-text">
-                            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. 
-                        </p>
+                        <h5 class="card-title" id="h52">Notre zone d'intervention</h5>
+                        <div class="rounded my-3 line"></div>
+                        <ul>
+                            <li>Département-1 | Code département-1</li>
+                            <li>Département-2 | Code département-2</li>
+                            <li>Département-3 | Code département-3</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="card image col-12 col-md-6 border-0">
-                    <img src="ressources/nettoyage3.jpg" alt="" class="card-img-top">
+                <div class="col-12 col-md-6 border-0">
+                    <img src="ressources/nettoyage3.jpg" alt="" class="image">
                 </div>
 
                 <div class="card text col-12 col-md-5 d-md-none border-0">
                     <div class="card-body">
-                        <h5 class="card-title" id="h54">Nos tarifs</h5>
-                        <p class="card-text">
-                            On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
-                        </p>
+                        <h5 class="card-title" id="h54">Notre zone d'activité</h5>
+                        <div class="rounded my-3 line"></div>
+                        <ul>
+                            <li>Département-1 | Code département-1</li>
+                            <li>Département-2 | Code département-2</li>
+                            <li>Département-3 | Code département-3</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="row justify-content-around section-off" id="contact">
-                <div class="card image col-12 col-md-6 border-0">
-                    <img src="ressources/escalator1.jpg" alt="" class="card-img-top">
+                <div class="card col-12 col-md-6 border-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83889.30132631387!2d1.9549908674600742!3d48.92414304090579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e68947dded65e3%3A0x40b82c3688c39a0!2s78300%20Poissy%2C%20France!5e0!3m2!1sfr!2sus!4v1631841688953!5m2!1sfr!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
                 </div>
 
                 <div class="card text col-12 col-md-5 border-0">
                     <div class="card-body">
                         <h5 class="card-title" id="h53">Contact</h5>
-                        <p class="card-text">
-                            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour.
-                        </p>
+                        <div class="rounded my-3 line"></div>
+                        <ul>
+                            <li class="list-unstyled">Nom de la société</li>
+                            <li class="list-unstyled">Adresse de la société</li>
+                            <li class="list-unstyled"><span class="fs-5 fw-bold bg-info text-white rounded">06 95 43 58 60</span></li>
+                            <li class="list-unstyled">Adresse email</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -96,11 +123,11 @@
                 <hr class="text-white">
                 <div class="d-flex justify-content-center">
                     <ul class="d-flex list-inline justify-content-around nav-footer">
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#">Acceuil</a></li>
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#a-propos">A propos</a></li>
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#tarifs">Nos tarifs</a></li>
-                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#contact">Contact</a></li>
+                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#">Accueil</a></li>
+                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#a-propos">Nos prestations</a></li>
+                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#tarifs">Zone d'intervention</a></li>
                         <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="pages/services-pages.html">Services</a></li>
+                        <li class="list-inline-item d-none d-md-block"><a class="text-decoration-none text-white" href="#contact">Contact</a></li>
                     </ul>  
                 </div>
                 <hr class="text-white">

@@ -2,13 +2,13 @@ html, body{
     height: 100%;
     width: 100%;
     font-size: auto;
-    background-color: #ffffff;
+    background-color: #ecf0f1;
 }
 
 .header-on {
     height: 100%;
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     animation: headerUp .5s;
     font-size: auto;
     background-image: linear-gradient(rgba(21, 46, 21, 0.3),
@@ -16,17 +16,17 @@ html, body{
     background-size: cover;
 }
 
-.header-off {
+ .header-off {
     height: 80%;
     width: 80%;
     animation: headerDown .5s;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-size: 11px;
     background-image: linear-gradient(rgba(21, 46, 21, 0.3),
     rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage1.jpg');
-}
+} 
 
-@keyframes headerDown {
+ @keyframes headerDown {
     from {
         height: 100%;
         width: 100%;
@@ -35,10 +35,10 @@ html, body{
         height: 80%;
         width: 80%; 
     }
-}
+} 
 
 @keyframes headerUp {
-    from {
+     from {
         height: 80%;
         width: 80%;
     }
@@ -46,63 +46,72 @@ html, body{
         height: 100%;
         width: 100%;
     }
+    /* 33% {background-image: linear-gradient(rgba(21, 46, 21, 0.3), 
+        rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage2.jpg');}
+    
+    66% {background-image: linear-gradient(rgba(21, 46, 21, 0.3), 
+        rgba(21, 46, 21, 0.3)), url('../ressources/nettoyage3.jpg');} */
 }
 
 .section-on {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 100%;
     width: 90%;
     animation: sectionUp .5s;
-    font-size: 13px;
+    font-size: 14px;
     box-shadow: 10px 5px 5px rgb(131, 148, 131);
+    background-color: #ffff;
+    opacity: 1;
 }
 
 .section-off {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 70%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 90%;
     width: 70%;
     animation: sectionDown .5s;
     font-size: 10px;
     box-shadow: 10px 5px 5px rgb(131, 148, 131);
+    background-color: #ffff;
+    opacity: .8;
 }
 
 @keyframes sectionDown {
     from {
-        height: 90%;
+        height: 100%;
         width: 90%;
-        font-size: 13px;
+        font-size: 14px;
+        opacity: 1;
     }
     to {
-        height: 70%;
+        height: 90%;
         width: 70%;
-        font-size: 10px; 
+        font-size: 10px;
+        opacity: .8; 
     }
 }
 
 @keyframes sectionUp {
     from {
-        height: 70%;
+        height: 90%;
         width: 70%;
         font-size: 10px;
+        opacity: .8;
     }
     to {
-        height: 90%;
+        height: 100%;
         width: 90%;
-        font-size: 13px;
+        font-size: 14px;
+        opacity: 1;
     }
 }
 
 
 .nav-list {
-    width: 50%;
+    width: 70%;
     height: auto;
-    background-color: #0c5725;
-}
-
-.image {
-    height: max-content;
+    background-color: #2d8576;
 }
 
 .text {
@@ -120,7 +129,7 @@ html, body{
 .reveal-off {
     opacity: 0;
     margin-top: 4rem;
-    animation: footerRevalOff 1s;
+    animation: footerRevalOff .5s;
 }
 
 @keyframes footerRevealOff {
@@ -135,7 +144,7 @@ html, body{
 .reveal {
     opacity: 1;
     margin-top: 4rem;
-    animation: footerReveal 1s;
+    animation: footerReveal .5s;
 }
 
 @keyframes footerReveal {
@@ -162,4 +171,27 @@ html, body{
 
 .nav-footer {
     width: 50%;
+}
+
+.logo {
+    height: fit-content;
+    width: fit-content;
+    opacity: .7;
+}
+
+.text-muted {
+    font-size: 11px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.line {
+    border: solid rgb(230, 11, 11);
+}
+
+.link {
+    text-decoration: none;
 }
