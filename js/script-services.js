@@ -13,7 +13,6 @@ const handleIntersectService = function (entries, observer) {
             
             entry.target.classList.remove('section-off')
             entry.target.classList.add('section-on')
-            observerService.unobserve(service)
        }
        else {
 
@@ -25,3 +24,29 @@ const handleIntersectService = function (entries, observer) {
 
 const observerService = new IntersectionObserver(handleIntersectService, options)
 observerService.observe(service)
+
+
+const footerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .3
+}
+
+const handleIntersectFooter = function (entries, footerObserver) {
+    entries.forEach(function(entry) {
+       if (entry.intersectionRatio >= .3){
+
+            observerService.unobserve(service)
+            entry.target.classList.remove('reveal-off')
+            entry.target.classList.add('reveal') 
+       }
+       else {
+            entry.target.classList.add('reveal-off')
+            entry.target.classList.remove('reveal')
+            observerService.observe(service)
+       }
+    })
+}
+
+const footerObserver = new IntersectionObserver(handleIntersectFooter, footerOptions)
+footerObserver.observe(document.getElementById('footer2'))
