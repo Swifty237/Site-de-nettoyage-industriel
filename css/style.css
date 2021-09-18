@@ -59,6 +59,7 @@ html, body{
     background-color: #ffff;
     opacity: 1;
     z-index: 7770;
+    border: 1px solid rgb(175, 171, 171);
 }
 
 .section-off {
@@ -72,6 +73,7 @@ html, body{
     background-color: #ffff;
     opacity: .8;
     z-index: 7771;
+    border: 1px solid rgb(175, 171, 171);
 }
 
 @keyframes sectionDown {
