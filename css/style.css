@@ -191,11 +191,24 @@ html, body{
 }
 
 .link {
+    font-size: inherit;
     text-decoration: none;
+}
+
+.link:hover {
+    font-size: 16px;
 }
 
 .button-color {
     background-color: #2d8576;
+}
+
+.tel {
+    font-size: inherit;
+}
+
+.tel:hover {
+    font-size: 20px;
 }
 
 .screen {
