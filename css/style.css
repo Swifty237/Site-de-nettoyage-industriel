@@ -55,10 +55,10 @@ html, body{
     width: 90%;
     animation: sectionUp .5s;
     font-size: 14px;
-    box-shadow: 10px 5px 5px rgb(202, 202, 198);
+    box-shadow: 15px 20px 3px rgba(34, 34, 33, .3);
     background-color: #ffff;
     opacity: 1;
-    z-index: 7777;
+    z-index: 7770;
 }
 
 .section-off {
@@ -68,10 +68,10 @@ html, body{
     width: 70%;
     animation: sectionDown .5s;
     font-size: 10px;
-    box-shadow: 10px 5px 5px rgb(202, 202, 198);
+    box-shadow: 15px 20px 3px rgba(34, 34, 33, .3);
     background-color: #ffff;
     opacity: .8;
-    z-index: 7776;
+    z-index: 7771;
 }
 
 @keyframes sectionDown {
@@ -204,7 +204,6 @@ html, body{
     height: 100%;
     width: 100%;
     opacity: .5;
-    z-index: 5555;
 }
 
 .screen-2 {
