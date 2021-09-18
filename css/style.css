@@ -55,7 +55,7 @@ html, body{
     width: 90%;
     animation: sectionUp .5s;
     font-size: 14px;
-    box-shadow: 10px 5px 5px rgb(131, 148, 131);
+    box-shadow: 10px 5px 5px rgb(202, 202, 198);
     background-color: #ffff;
     opacity: 1;
     z-index: 7777;
@@ -68,7 +68,7 @@ html, body{
     width: 70%;
     animation: sectionDown .5s;
     font-size: 10px;
-    box-shadow: 10px 5px 5px rgb(131, 148, 131);
+    box-shadow: 10px 5px 5px rgb(202, 202, 198);
     background-color: #ffff;
     opacity: .8;
     z-index: 7776;
@@ -203,14 +203,14 @@ html, body{
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: .3;
+    opacity: .5;
     z-index: 5555;
 }
 
 .screen-2 {
     height: 15%;
     width: 100%;
-    background-color: rgb(65, 65, 59);
+    background-color: rgb(172, 172, 163);
 }
 
 .screen-3 {
