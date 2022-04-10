@@ -10,8 +10,7 @@ html, body{
     height: 100%;
     width: 100%;
     margin-bottom: 2rem;
-    animation: headerUp .5s ease-in;
-    font-size: auto;
+    animation: headerUp .7s ease-in-out;
     background-size: cover;
     z-index: 7774
 }
@@ -20,8 +19,8 @@ html, body{
     height: 80%;
     width: 80%;
     margin-bottom: 2rem;
-    animation: headerDown .5s ease-in;
-    font-size: 11px;
+    animation: headerDown .7s ease-in-out;
+    font-size: 14px;
     background-size: cover;
     z-index: 7775
 } 
@@ -49,20 +48,18 @@ html, body{
 }
 
 .section-on {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     height: 100%;
     width: 90%;
-    animation: sectionUp .5s;
     font-size: 14px;
     box-shadow: 15px 20px 3px rgba(34, 34, 33, .3);
     background-color: #ffff;
-    opacity: 1;
     z-index: 7770;
     border: 1px solid rgb(175, 171, 171);
 }
 
-.section-off {
+/* .section-off {
     margin-top: 3rem;
     margin-bottom: 3rem;
     height: 90%;
@@ -74,9 +71,9 @@ html, body{
     opacity: .8;
     z-index: 7771;
     border: 1px solid rgb(175, 171, 171);
-}
+} */
 
-@keyframes sectionDown {
+/* @keyframes sectionDown {
     from {
         height: 100%;
         width: 90%;
@@ -104,7 +101,7 @@ html, body{
         font-size: 14px;
         opacity: 1;
     }
-}
+} */
 
 
 .nav-list {
@@ -128,7 +125,7 @@ html, body{
 .reveal-off {
     opacity: 0;
     margin-top: 3rem;
-    animation: footerRevalOff .5s;
+    animation: footerRevalOff .8s;
 }
 
 @keyframes footerRevealOff {
@@ -143,7 +140,7 @@ html, body{
 .reveal {
     opacity: 1;
     margin-top: 3rem;
-    animation: footerReveal .5s;
+    animation: footerReveal .8s;
 }
 
 @keyframes footerReveal {
@@ -193,24 +190,12 @@ html, body{
 }
 
 .link {
-    font-size: 12px;
-    text-decoration: none;
-}
-
-.link:hover {
     font-size: 15px;
+    text-decoration: none;
 }
 
 .button-color {
     background-color: #2d8576;
-}
-
-.tel {
-    font-size: inherit;
-}
-
-.tel:hover {
-    font-size: 18px;
 }
 
 .screen {
